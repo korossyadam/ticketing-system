@@ -1,0 +1,727 @@
+main > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    background-color: #f5f5f5;
+    font-size: .9em;
+    height: 60px;
+}
+
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    content: '';
+    left: 3px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: solid 5px transparent;
+    margin: 4px 4px 2px 4px;
+    background: transparent;
+}
+
+a.asc:after {
+    border-bottom: solid 7px #212529;
+    border-top-width: 0;
+}
+
+a.desc:after {
+    border-top: solid 7px #212529;
+    border-bottom-width: 0;
+}
+
+.grid-view th,
+.grid-view td:last-child {
+    white-space: nowrap;
+}
+
+.grid-view .filters input,
+.grid-view .filters select {
+    min-width: 50px;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding-top: 7px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+.spacing {
+    margin-top: 40px;
+    margin-bottom: 35px;
+}
+
+.main-btn {
+    width: 60%;
+    margin-left: 20%;
+    padding: 8px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.green {
+    color: #55944d;
+}
+
+.green:hover {
+    color: #55944d;
+}
+
+.green-bcg {
+    background-color: #55944d;
+    border-color: #55944d;
+}
+
+.green-bcg:hover {
+    background-color: #43753d;
+    border-color: #43753d;
+}
+
+.green-bcg:focus,
+.green-bcg:active {
+    background-color: #43753d !important;
+    border-color: #43753d !important;
+}
+
+.yellow {
+    color: #9bb54e;
+}
+
+.yellow-bcg {
+    background-color: #9bb54e;
+    border-color: #9bb54e;
+}
+
+.yellow-bcg:hover {
+    background-color: #879c4b;
+    border-color: #879c4b;
+}
+
+.header {
+    background-color: #343a40;
+    color: white;
+}
+
+.status-rectangle {
+    width: 40px;
+    height: 40px;
+}
+
+.bg-title {
+    position: absolute;
+    top: 8%;
+    left: 5%;
+    width: 90%;
+    height: 10%;
+    background-color: #343a40;
+    color: #fff;
+}
+
+.title {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.date {
+    position: relative;
+    top: -20px;
+    margin-left: 10px;
+}
+
+.bg-ticket {
+    position: absolute;
+    top: 18%;
+    left: 5%;
+    width: 60%;
+    height: 70%;
+    background-color: #d9d9d9;
+    border: 4px ridge #b8b8b8;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+.full-div {
+    display: table;
+    width: 100%;
+}
+
+.comment-right {
+    float: right;
+    padding: 5px 25px 5px 25px;
+    margin: 10px 5px 0px 0px;
+    max-width: 45%;
+    background-color: #969696;
+    border-radius: 20px;
+    overflow-wrap: break-word;
+    clear: right;
+}
+
+.comment-left {
+    float: left;
+    padding: 5px 25px 5px 25px;
+    margin: 10px 0px 0px 5px;
+    max-width: 45%;
+    background-color: cornflowerblue;
+    border-radius: 20px;
+    overflow-wrap: break-word;
+    clear: left;
+}
+
+.details-right {
+    display: block;
+    max-width: 45%;
+    float: right;
+    margin-right: 15px;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.details-left {
+    float: left;
+    max-width: 45%;
+    margin-left: 15px;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.activity-right {
+    position: relative;
+    top: -17px;
+    max-width: 45%;
+    float: right;
+    margin-right: 15px;
+    clear: right;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.activity-left {
+    position: relative;
+    top: -17px;
+    float: left;
+    max-width: 45%;
+    margin-left: 15px;
+    clear: left;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.comment-delete {
+    float: right;
+    background-color: #bd2130;
+    border-radius: 6px;
+    border: 0px solid;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 12px;
+    margin-top: 4px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.comment-delete:hover {
+    background-color: brown;
+}
+
+.bg-comment {
+    position: absolute;
+    top: 18%;
+    left: 65%;
+    width: 30%;
+    height: 70%;
+    background-color: #d9d9d9;
+    border: 4px ridge #b8b8b8;
+    border-radius: 5px;
+}
+
+.left-push {
+    position: absolute;
+    left: 10px;
+}
+
+.comment-body {
+    width: 250%;
+}
+
+.options-position {
+    width: 250%;
+}
+
+#comment-image {
+    height: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.15s;
+    margin: 10px;
+    display: block;
+}
+
+#comment-image:hover {
+    opacity: 0.4;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Sit on top */
+    padding-top: 150px; /* Location of the box */
+    left: 0;
+    top: 0;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.modal-content {
+    animation-name: zoom;
+    animation-duration: 0.3s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+.modal-close {
+    position: absolute;
+    top: 70px;
+    right: 10%;
+    color: #43753d;
+    font-size: 80px;
+    font-weight: bold;
+    transition: 0.3s;
+    z-index: 999999;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    color: #43753d;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+.delete-btn {
+    background-color: #bf3f4b;
+    border-radius: 6px;
+    border: 0px solid;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 17px;
+    padding: 6px 7px 6px 7px;
+    text-decoration: none;
+}
+
+.delete-btn:hover {
+    background-color: brown;
+}
+
+.btn-smaller {
+    width: 100%;
+    font-size: 13px;
+    margin-bottom: 3px;
+    padding: 1px;
+}
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+/* On screens that are 991px or less, make content smaller */
+@media screen and (max-width: 991px) {
+
+    .navbar-size {
+        font-size: 14px;
+    }
+
+    .bg-title {
+        height: 8%;
+    }
+
+    .bg-ticket {
+        position: absolute;
+        top: 16%;
+        width: 90%;
+        height: 50%;
+        background-color: #d9d9d9;
+        border: 4px ridge #b8b8b8;
+        border-radius: 5px;
+        overflow: auto;
+    }
+
+    .bg-comment {
+        position: absolute;
+        top: 66%;
+        left: 5%;
+        width: 90%;
+        height: 25%;
+        background-color: #d9d9d9;
+        border: 4px ridge #b8b8b8;
+        border-radius: 5px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .date {
+        font-size: 16px;
+    }
+
+    .comment-body {
+        position: relative;
+        top: 24px;
+        width: 40%;
+        height: 150px;
+    }
+
+    .options-position {
+        position: relative;
+        left: 45%;
+        top: -163px;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .btn-comment {
+        font-size: 14px;
+    }
+
+    #comment-image {
+        height: 80px;
+    }
+
+    .comment-right {
+        padding: 4px 14px 4px 14px;
+        font-size: 16px;
+    }
+
+    .comment-left {
+        padding: 4px 14px 4px 14px;
+        font-size: 16px;
+    }
+
+    .details-right {
+        margin-right: 6px;
+        font-size: 16px;
+    }
+
+    .details-left {
+        margin-left: 6px;
+        font-size: 16px;
+    }
+
+    .activity-right {
+        margin-left: 6px;
+        font-size: 16px;
+    }
+
+    .activity-left {
+        margin-left: 6px;
+        font-size: 16px;
+    }
+}
+
+/* On screens that are 767px or less, make content smaller */
+@media screen and (max-width: 767px) {
+    .display-4 {
+        font-size: 40px;
+    }
+
+    .lead {
+        font-size: 18px;
+    }
+
+    .main-btn {
+        font-size: 18px;
+    }
+
+    .header {
+        font-size: 14px;
+    }
+
+    .table-grid {
+        font-size: 14px;
+    }
+
+    .status-rectangle {
+        width: 30px;
+        height: 30px;
+    }
+
+    .big-title {
+        font-size: 34px;
+    }
+
+    .subtitle {
+        font-size: 15px;
+    }
+
+    .bg-title {
+        height: 6%;
+    }
+
+    .bg-ticket {
+        top: 14%;
+        height: 52%;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .date {
+        font-size: 14px;
+    }
+
+    #comment-image {
+        height: 70px;
+    }
+
+    .comment-right {
+        padding: 4px 12px 4px 12px;
+        font-size: 15px;
+    }
+
+    .comment-left {
+        padding: 4px 12px 4px 12px;
+        font-size: 15px;
+    }
+
+    .details-right {
+        margin-right: 6px;
+        font-size: 15px;
+    }
+
+    .details-left {
+        margin-left: 6px;
+        font-size: 15px;
+    }
+
+    .activity-right {
+        margin-left: 6px;
+        font-size: 15px;
+    }
+
+    .activity-left {
+        margin-left: 6px;
+        font-size: 15px;
+    }
+}
+
+/* On screens that are 600px or less, make content smaller */
+@media screen and (max-width: 600px) {
+
+    .bg-title {
+        height: 5%;
+    }
+
+    .bg-ticket {
+        top: 13%;
+        height: 53%;
+    }
+
+    .title {
+        font-size: 14px;
+    }
+
+    .date {
+        font-size: 10px;
+    }
+
+    .options-position {
+        font-size: 14px;
+    }
+
+    #comment-image {
+        height: 55px;
+    }
+
+    .comment-right {
+        padding: 4px 10px 4px 10px;
+        font-size: 14px;
+    }
+
+    .comment-left {
+        padding: 4px 10px 4px 10px;
+        font-size: 14px;
+    }
+
+    .details-right {
+        margin-right: 6px;
+        font-size: 14px;
+    }
+
+    .details-left {
+        margin-left: 6px;
+        font-size: 14px;
+    }
+
+    .activity-right {
+        margin-left: 6px;
+        font-size: 14px;
+    }
+
+    .activity-left {
+        margin-left: 6px;
+        font-size: 14px;
+    }
+}
+
+/* On screens that are 455px or less, make content smaller */
+@media screen and (max-width: 455px) {
+    .display-4 {
+        font-size: 30px;
+    }
+
+    .lead {
+        font-size: 14px;
+    }
+
+    .main-btn {
+        font-size: 14px;
+    }
+
+    .header {
+        font-size: 12px;
+    }
+
+    .table-grid {
+        font-size: 12px;
+    }
+
+    .status-rectangle {
+        width: 25px;
+        height: 25px;
+    }
+
+    .big-title {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+    }
+
+    .bg-title {
+        height: 4%;
+    }
+
+    .bg-ticket {
+        top: 12%;
+        height: 54%;
+    }
+
+    .title {
+        font-size: 12px;
+    }
+
+    .date {
+        font-size: 8px;
+    }
+
+    .options-position {
+        font-size: 10px;
+    }
+
+    .btn-comment {
+        width: 50%;
+        font-size: 10px;
+    }
+
+    .comment-right {
+        padding: 4px 10px 4px 10px;
+        font-size: 10px;
+    }
+
+    .comment-left {
+        padding: 4px 10px 4px 10px;
+        font-size: 10px;
+    }
+
+    .details-right {
+        margin-right: 6px;
+        font-size: 10px;
+    }
+
+    .details-left {
+        margin-left: 6px;
+        font-size: 10px;
+    }
+
+    .activity-right {
+        margin-left: 6px;
+        font-size: 10px;
+    }
+
+    .activity-left {
+        margin-left: 6px;
+        font-size: 10px;
+    }
+
+}
